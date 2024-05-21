@@ -484,6 +484,15 @@ CH - @USER_OWNER : @USER_OWNER*""",parse_mode="markdown",reply_to_message_id=mes
 	p5 = types.InlineKeyboardButton( "[!] 𓏺𝙎𝙊𝙐𝙍𝘾𝞝 𝗔𝗹𝗺𝗼𝗿𝘁𝗮𝗴𝗲𝗹",url="t.me/USER_OWNER")
 	p3.add(p5)
 	
+	if message.text == "قران" or message.text == "صور تمبلر" or message.text == "افتار تمبلر":
+		voice_str =  random.randint(24,618)
+		almortagel = "https://t.me/EIEI06/" + str(voice_str)
+		app.send_voice(message.chat.id,almortagel,"""*تم اختيار قران اليك، 
+- - - -- - - - - -- - - - -
+CH - @USER_OWNER : @USER_OWNER*""",parse_mode="markdown",reply_to_message_id=message.message_id,reply_markup=p3)
+	p3 = types.InlineKeyboardMarkup()
+	p5 = types.InlineKeyboardButton( "[!] 𓏺𝙎𝙊𝙐𝙍𝘾𝞝 𝗔𝗹𝗺𝗼𝗿𝘁𝗮𝗴𝗲𝗹",url="t.me/USER_OWNER")
+	p3.add(p5)
 	
 	if "تاك" in message.text:
 	 m = message
@@ -501,17 +510,17 @@ CH - @USER_OWNER : @USER_OWNER*""",parse_mode="markdown",reply_to_message_id=mes
 		song_str = random.randint(74,154)
 		song_voice = "https://t.me/vVvdav/" + str(song_str)
 		app.send_audio(message.chat.id,song_voice,"""*✯ تم ختيار ريمكس اليك، 
-- @Sss0s0app*""",parse_mode="markdown",reply_to_message_id=message.message_id,reply_markup=p3)
+- @AlmortagelTech*""",parse_mode="markdown",reply_to_message_id=message.message_id,reply_markup=p3)
 	if message.text == "شعر" or message.text == "ش":
 		song_str = random.randint(74,904)
 		song_voice = "https://t.me//" + str(song_str)
 		app.send_voice(message.chat.id,song_voice,"""*✯ تم ختيار شعر اليك، 
-- @Sss0s0app*""",parse_mode="markdown",reply_to_message_id=message.message_id,reply_markup=p3)
+- @AlmortagelTech*""",parse_mode="markdown",reply_to_message_id=message.message_id,reply_markup=p3)
 	if message.text == "غنيلي" or message.text == "غ":
 		song_str = random.randint(74,154)
 		song_voice = "https://t.me/DjAseel/" + str(song_str)
 		app.send_audio(message.chat.id,song_voice,"""*✯ تم ختيار اغنية لك، 
-- @Sss0s0app*""",parse_mode="markdown",reply_to_message_id=message.message_id,reply_markup=p3)
+- @AlmortagelTech*""",parse_mode="markdown",reply_to_message_id=message.message_id,reply_markup=p3)
 	if message.text == "هلو":
 		app.reply_to(message,"هلوات يروحي 😍")
 	elif message.text == "وين":
@@ -535,7 +544,7 @@ CH - @USER_OWNER : @USER_OWNER*""",parse_mode="markdown",reply_to_message_id=mes
 	elif message.text=="شوكت تجي":
 		app.reply_to(message,"من تروح انت 😒😒✋،!!¿.")
 	elif message.text=="بوت":
-		app.reply_to(message,"اسمي ↫ 𝐒𝐀𝐃𝐑𝐄 افتهم عادد")
+		app.reply_to(message,"اسمي ↫ {$user_name} افتهم عادد")
 		
 	elif "حسابي" in message.text or "حسابج" in message.text or "حساب"in message.text:
 		app.reply_to(message,"شنو طار ؟؟")#جمع الاوامر 
@@ -655,7 +664,14 @@ def callback_data(call):
  تقيد <<
  ايدي <<
  كشف بالرد <<
- حسابي <<
+ حسابي <<*""",parse_mode="markdown",reply_markup=p3)
+ 
+ elif call.data == "A2":
+      p3 = types.InlineKeyboardMarkup()
+      s0 = types.InlineKeyboardButton(text = "رجوع",callback_data="s0")
+      p3.add(s0)
+      app.edit_message_text(chat_id=call.message.chat.id,message_id=call.message.message_id,text="""*اوامر التسليه
+  - - - - - - - - - - - - - 
  صورتي <<
  اسمي <<
  الوقت <<
