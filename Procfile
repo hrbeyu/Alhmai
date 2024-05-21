@@ -1,1 +1,1 @@
-web: python3 hamaya.py
+web: python3 haya
