@@ -1,7 +1,7 @@
 import requests
-from teleapp import types
+from telebot import types
 import random
-import teleapp
+import telebot
 from datetime import date ,timedelta ,time
 import time 
 from config import  BOT_TOKEN,  OWNER_ID,  USER_OWNER
@@ -9,7 +9,7 @@ import asyncio
 from pyrogram import Client, filters
 import random
 ssss = OWNER_ID
-app = teleapp.Teleapp(BOT_TOKEN)
+app = telebot.Telebot(BOT_TOKEN)
 p3 = types.InlineKeyboardMarkup()
 p5 = types.InlineKeyboardButton(text = "[!] 𓏺𝙎𝙊𝙐𝙍𝘾𝞝 𝗔𝗹𝗺𝗼𝗿𝘁𝗮𝗴𝗲𝗹",url="t.me/USER_OWNER")
 A1 = types.InlineKeyboardButton(text = "اوامر الحماية .",callback_data="A1")
