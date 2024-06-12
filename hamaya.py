@@ -1,5 +1,4 @@
 import requests
-from telebot import types
 import random
 import telebot
 from datetime import date ,timedelta ,time
