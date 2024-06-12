@@ -10,6 +10,8 @@ from pyrogram import Client, filters
 import random
 ssss = OWNER_ID
 app = telebot.Telebot(BOT_TOKEN)
+
+
 p3 = types.InlineKeyboardMarkup()
 p5 = types.InlineKeyboardButton(text = "[!] 𓏺𝙎𝙊𝙐𝙍𝘾𝞝 𝗔𝗹𝗺𝗼𝗿𝘁𝗮𝗴𝗲𝗹",url="t.me/USER_OWNER")
 A1 = types.InlineKeyboardButton(text = "اوامر الحماية .",callback_data="A1")
