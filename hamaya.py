@@ -9,8 +9,8 @@ import asyncio
 from pyrogram import Client, filters
 import random
 
-ssss = telebot.Telebot(OWNER_ID)
-app = telebot.Telebot(BOT_TOKEN)
+ssss = Config.OWNER_ID
+app = Config.BOT_TOKEN
 
 
 p3 = types.InlineKeyboardMarkup()
