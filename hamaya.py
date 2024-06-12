@@ -4,16 +4,17 @@ import random
 import telebot
 from datetime import date ,timedelta ,time
 import time 
-from config import  BOT_TOKEN,  OWNER_ID,  USER_OWNER
+from config import  BOT_TOKEN,  OWNER_ID
 import asyncio
 from pyrogram import Client, filters
 import random
-ssss = OWNER_ID
+
+ssss = telebot.Telebot(OWNER_ID)
 app = telebot.Telebot(BOT_TOKEN)
 
 
 p3 = types.InlineKeyboardMarkup()
-p5 = types.InlineKeyboardButton(text = "[!] 𓏺𝙎𝙊𝙐𝙍𝘾𝞝 𝗔𝗹𝗺𝗼𝗿𝘁𝗮𝗴𝗲𝗹",url="t.me/USER_OWNER")
+p5 = types.InlineKeyboardButton(text = "[!] 𓏺𝙎𝙊𝙐𝙍𝘾𝞝 𝗔𝗹𝗺𝗼𝗿𝘁𝗮𝗴𝗲𝗹",url="t.me/AlmortagelTech")
 A1 = types.InlineKeyboardButton(text = "اوامر الحماية .",callback_data="A1")
 A2 = types.InlineKeyboardButton(text = "اوامر التسلية .",callback_data="A2")
 A3 = types.InlineKeyboardButton(text = "اوامر الالعاب .",callback_data="A3")
@@ -710,7 +711,7 @@ def alaoamr(call):
 ⌯ افتار + باليوزر او الرد
 ⌯ مين ضافني؟"""
     elif call.data == "a2":
-        text = """للاستفسار - @cEbot
+        text = """للاستفسار - @AlmortagelTech
 
 
 ❨ اوامر الوضع ❩
@@ -742,7 +743,7 @@ def alaoamr(call):
 ⌯ لقبي
 ⌯ صلاحياته + بالرد"""
     elif call.data == "a3":
-        text = """للاستفسار - @cEbot
+        text = """للاستفسار - @AlmortagelTech
 
 
 ❨ اوامر الردود ❩
@@ -881,7 +882,7 @@ def alaoamr(call):
 ⌯ توب الحراميه ↢ يطلع لك اكثر ناس زرفوا"""
 
     elif call.data == "a7":
-        text = """للاستفسار - @cEbot
+        text = """للاستفسار - @AlmortagelTech
 
 🍰 ⌯ رفع ↣ ↢ تنزيل كيكه
 🍯 ⌯ رفع ↣ ↢ تنزيل عسل
@@ -931,7 +932,7 @@ def alaoamer(message):
     chat_id = message.chat.id
     text = '''⇜ اهلين فيك باوامر البوت
 
-للاستفسار - @cEbot'''
+للاستفسار - @AlmortagelTech'''
     keyboard = InlineKeyboardMarkup(row_width=2)
     A = InlineKeyboardButton("م1", callback_data="a1")
     S = InlineKeyboardButton("م2", callback_data="a2")
