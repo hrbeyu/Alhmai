@@ -16,36 +16,10 @@
         "value": "6098937182:AAF8H3rhe2GiboSk3atwQeltAZQCSsUe6LA",
         "required": true
       },
-    
-       "USER_CHANNEL": {
-        "description": "يوزر قناتك بدون @",
-        "value": "H_M_Dr",
-        "required": true
-      },
       "OWNER_ID": {
         "description": "ايديك ولو تبي تخلي مطور ثاني معاك خلي مسافه بين ايديك وايديه",
-        "value": "5012406813",
+        "value": "5089553588",
         "required": true
-      }, 
-      "USER_OWNER": {
-        "description": "يوزر المطور بدون @",
-        "value": "IIIlIIv",
-        "required": true
-      }, 
-      "LOG_GROUP_ID": {
-        "description": "ايدي جروبك",
-        "value": "IIIlIIv",
-        "required": true
-      },
-      "HEROKU_API_KEY": {
-        "description": "مفتاح الهيروكو تلقاه في اعدادات حساب اهيروكو",
-        "value": "",
-        "required": false
-      },
-      "HEROKU_APP_NAME": {
-        "description": "اسم التطبيق يكون انجليزي وكل حروفه سمول",
-        "value": "",
-        "required": false
       }
     },
 	"buildpacks": [
