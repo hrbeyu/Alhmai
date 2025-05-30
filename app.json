@@ -13,12 +13,12 @@
     "env": {
       "BOT_TOKEN": {
         "description": "توكن بوتك لو ماتعرفش كيف تبي تدير بوت ؟",
-        "value": "6098937182:AAF8H3rhe2GiboSk3atwQeltAZQCSsUe6LA",
+        "value": "7839574004:AAHLKnWsfvRfg42CH3WFbr9t2JS1dmrz8dc",
         "required": true
       },
       "OWNER_ID": {
         "description": "ايديك ولو تبي تخلي مطور ثاني معاك خلي مسافه بين ايديك وايديه",
-        "value": "5089553588",
+        "value": "7182427468",
         "required": true
       }
     },
